@@ -1,5 +1,6 @@
 import { ArrowRight, Calendar, MapPin, Clock } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/studioData';
+import { STUDIO_IMAGES } from '../assets/images';
 
 interface HeroProps {
   onOpenConsultation: () => void;
@@ -52,7 +53,7 @@ export function Hero({ onOpenConsultation, onExploreWork }: HeroProps) {
         <div className="relative rounded-lg overflow-hidden border border-stone-200 shadow-md bg-stone-100">
           <div className="aspect-[16/9] w-full relative">
             <img
-              src="/src/assets/images/hero_preet_living_1790515137644.jpg"
+              src={STUDIO_IMAGES.heroLiving}
               alt="Warm, sophisticated living room in a Delhi residence designed with custom teak woodwork and layered cove lighting by Preet Interiors"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

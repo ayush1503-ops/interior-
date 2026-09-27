@@ -3,6 +3,8 @@
  * Keeps business information, services, projects, and process easily maintainable.
  */
 
+import { STUDIO_IMAGES } from '../assets/images';
+
 export interface BusinessInfo {
   name: string;
   tagline: string;
@@ -180,14 +182,14 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Krishna Nagar, East Delhi',
     shortDescription: 'A serene living lounge blending fluted teak woodwork, travertine surfaces, and warm layered cove illumination.',
     fullOverview: 'Designed for a Delhi family seeking warmth, understated elegance, and spaciousness in an urban floor. The primary living zone eliminates visual clutter with seamless concealed storage, low-slung linen seating, and ambient cove lighting that makes the space feel open throughout the evening.',
-    heroImage: '/src/assets/images/hero_preet_living_1790515137644.jpg',
+    heroImage: STUDIO_IMAGES.heroLiving,
     galleryImages: [
       {
-        url: '/src/assets/images/hero_preet_living_1790515137644.jpg',
+        url: STUDIO_IMAGES.heroLiving,
         caption: 'Wide conversational living lounge with custom teak wood millwork and low travertine coffee table.',
       },
       {
-        url: '/src/assets/images/preet_dining_detail_1790515157449.jpg',
+        url: STUDIO_IMAGES.diningDetail,
         caption: 'Adjoining dining space with fluted timber screen and handcrafted cane-back seating.',
       },
     ],
@@ -211,14 +213,14 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Preet Vihar, Delhi',
     shortDescription: 'Bespoke timber partition screen separating dining and formal living, crafted with natural cane detailing.',
     fullOverview: 'This project addressed a classic Delhi apartment layout challenge: creating privacy between the dining table and the entrance without closing off natural light or air circulation. The fluted timber partition introduces architectural depth while serving as a beautiful backdrop.',
-    heroImage: '/src/assets/images/preet_dining_detail_1790515157449.jpg',
+    heroImage: STUDIO_IMAGES.diningDetail,
     galleryImages: [
       {
-        url: '/src/assets/images/preet_dining_detail_1790515157449.jpg',
+        url: STUDIO_IMAGES.diningDetail,
         caption: 'Sculptural dining table with cane-back dining chairs and fluted vertical timber divider.',
       },
       {
-        url: '/src/assets/images/hero_preet_living_1790515137644.jpg',
+        url: STUDIO_IMAGES.heroLiving,
         caption: 'Visual connection between the dining area and the main living space.',
       },
     ],
@@ -242,14 +244,14 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Anand Vihar, Delhi',
     shortDescription: 'High-performance modular kitchen with matte taupe cabinetry, fluted accents, and seamless quartz worktops.',
     fullOverview: 'Engineered for high-volume family cooking, this kitchen integrates moisture-sealed HDHMR carcases, heavy-duty soft-close drawer slides, and an ergonomic Golden Triangle workflow. Matte anti-fingerprint surfaces keep daily maintenance effortless.',
-    heroImage: '/src/assets/images/preet_modular_kitchen_1790515176816.jpg',
+    heroImage: STUDIO_IMAGES.modularKitchen,
     galleryImages: [
       {
-        url: '/src/assets/images/preet_modular_kitchen_1790515176816.jpg',
+        url: STUDIO_IMAGES.modularKitchen,
         caption: 'Ergonomic kitchen layout featuring fluted oak base cabinets, quartz surfaces, and concealed under-shelf lighting.',
       },
       {
-        url: '/src/assets/images/preet_wardrobe_storage_1790515203354.jpg',
+        url: STUDIO_IMAGES.wardrobeStorage,
         caption: 'High-capacity full-height pantry and utility storage in adjacent corridor.',
       },
     ],
@@ -273,14 +275,14 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Greater Kailash, South Delhi',
     shortDescription: 'A calm, tactile master bedroom featuring tailored upholstered panelling and floating bedside woodwork.',
     fullOverview: 'A restorative sanctuary removed from the bustling city sounds. Soft acoustic fabric panels behind the bed provide quiet warmth, complemented by floating nightstands that keep the floor area open and easy to maintain.',
-    heroImage: '/src/assets/images/preet_master_bedroom_1790515188090.jpg',
+    heroImage: STUDIO_IMAGES.masterBedroom,
     galleryImages: [
       {
-        url: '/src/assets/images/preet_master_bedroom_1790515188090.jpg',
+        url: STUDIO_IMAGES.masterBedroom,
         caption: 'Serene bedroom composition with full-width upholstered headboard and warm brass wall sconces.',
       },
       {
-        url: '/src/assets/images/preet_wardrobe_storage_1790515203354.jpg',
+        url: STUDIO_IMAGES.wardrobeStorage,
         caption: 'Adjoining dressing suite with floor-to-ceiling timber wardrobe joinery.',
       },
     ],
@@ -304,14 +306,14 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Sector 15, Noida',
     shortDescription: 'Floor-to-ceiling storage architecture with integrated lighting and minimalist hardware.',
     fullOverview: 'Maximizing vertical space in a contemporary penthouse. This wardrobe features custom interior divisions mapped precisely to the homeowners’ clothing requirements, including deep drawers, velvet accessories trays, and high overhead suitcases storage.',
-    heroImage: '/src/assets/images/preet_wardrobe_storage_1790515203354.jpg',
+    heroImage: STUDIO_IMAGES.wardrobeStorage,
     galleryImages: [
       {
-        url: '/src/assets/images/preet_wardrobe_storage_1790515203354.jpg',
+        url: STUDIO_IMAGES.wardrobeStorage,
         caption: 'Floor-to-ceiling timber wardrobe with concealed warm illumination profiles and integrated brass pulls.',
       },
       {
-        url: '/src/assets/images/preet_master_bedroom_1790515188090.jpg',
+        url: STUDIO_IMAGES.masterBedroom,
         caption: 'View into the adjoining master sleeping sanctuary.',
       },
     ],

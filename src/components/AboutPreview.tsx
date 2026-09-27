@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { STUDIO_IMAGES } from '../assets/images';
 
 interface AboutPreviewProps {
   onLearnMore: () => void;
@@ -16,7 +17,7 @@ export function AboutPreview({ onLearnMore, onOpenConsultation }: AboutPreviewPr
             <div className="relative rounded-sm overflow-hidden border border-stone-200 bg-stone-100">
               <div className="aspect-[4/3] w-full">
                 <img
-                  src="/src/assets/images/preet_dining_detail_1790515157449.jpg"
+                  src={STUDIO_IMAGES.diningDetail}
                   alt="Preet Interiors dining and fluted wood partition architectural craftsmanship in Delhi"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

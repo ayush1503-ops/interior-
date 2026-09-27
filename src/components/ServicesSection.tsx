@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, Plus, Minus } from 'lucide-react';
 import { SERVICES } from '../data/studioData';
+import { STUDIO_IMAGES } from '../assets/images';
 
 interface ServicesSectionProps {
   onSelectServiceForConsultation: (serviceTitle: string) => void;
@@ -40,14 +41,14 @@ export function ServicesSection({ onSelectServiceForConsultation }: ServicesSect
                 <img
                   src={
                     activeService.id === 'modular-kitchens'
-                      ? '/src/assets/images/preet_modular_kitchen_1790515176816.jpg'
+                      ? STUDIO_IMAGES.modularKitchen
                       : activeService.id === 'bedrooms'
-                      ? '/src/assets/images/preet_master_bedroom_1790515188090.jpg'
+                      ? STUDIO_IMAGES.masterBedroom
                       : activeService.id === 'wardrobes-storage'
-                      ? '/src/assets/images/preet_wardrobe_storage_1790515203354.jpg'
+                      ? STUDIO_IMAGES.wardrobeStorage
                       : activeService.id === 'living-spaces'
-                      ? '/src/assets/images/hero_preet_living_1790515137644.jpg'
-                      : '/src/assets/images/preet_dining_detail_1790515157449.jpg'
+                      ? STUDIO_IMAGES.heroLiving
+                      : STUDIO_IMAGES.diningDetail
                   }
                   alt={activeService.title}
                   className="w-full h-full object-cover transition-opacity duration-500"
