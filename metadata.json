@@ -1,0 +1,8 @@
+{
+  "name": "Preet Interiors | Interior Design Studio in Delhi",
+  "description": "Professional interior design studio in Delhi creating considered residential and commercial spaces focused on comfort, proportion, and everyday living.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
